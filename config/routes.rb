@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-  get 'pages/home'
-
+  root "pages#home"
+  get "about" => "pages#about" # Creates the about_path link that takes you to the "About" navigation link
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
