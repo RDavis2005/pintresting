@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :pins
+
   devise_for :users
   root "pages#home"
   get "about" => "pages#about" # Creates the about_path link that takes you to the "About" navigation link
